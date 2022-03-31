@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <!-- Import Vue CDN -->
+    <script src="https://unpkg.com/vue@3.2.2"></script>
+    <!-- Import Single-File-Component Loader CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Website Replica</title>
+    </head>
+    <body>
+        <div id="app">
+            <!-- Hero container + navBar -->
+            <hero-cover selected="Game" onclick="window.location.href='#nameSection';"></hero-cover>
+            <!-- Hero div for centering of text -->
+            <div class="hero-text">
+                <h1>{{gamePageResources.title}}</h1>
+            </div>
+            <div id="scroll-down">
+                <h2>&#8595;</h2>
+            </div>
+            <!-- Container wrapping cards -->
+            <div class="frame-container">
+                <!-- Controls content and way it shows -->
+                <div class="scrolling-content">
+                    <!-- Flex-container set with wrap and growth -->
+                    <div class="flex-container" id="nameSection">
+                        <!-- Card that grows bases on size of content and screen width -->
+                        <div class="card">
+                            <div class="gradient-border">
+                                 <game></game>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Import App & sfcLoader -->
+        <script src="script.js"></script>
+        <script src="sfcLoader.js"></script>
+        <!-- Mount app -->
+        <script>
+            const mountedApp = app.mount('#app')
+        </script>
+    </body>
+</html>
