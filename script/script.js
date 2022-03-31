@@ -1,9 +1,9 @@
 const app = Vue.createApp({
     components: {
-        'imports': Vue.defineAsyncComponent( () => loadModule('imports.vue', options) ),
-        'hero-cover': Vue.defineAsyncComponent( () => loadModule('heroCover.vue', options) ),
-        'game': Vue.defineAsyncComponent( () => loadModule('game.vue', options) ),
-        'api': Vue.defineAsyncComponent( () => loadModule('api.vue', options) ),
+        'imports': Vue.defineAsyncComponent( () => loadModule('../templates/imports.vue', options) ),
+        'hero-cover': Vue.defineAsyncComponent( () => loadModule('../templates/heroCover.vue', options) ),
+        'game': Vue.defineAsyncComponent( () => loadModule('../templates/game.vue', options) ),
+        'api': Vue.defineAsyncComponent( () => loadModule('../templates/api.vue', options) ),
     },
 
     data: function() {
