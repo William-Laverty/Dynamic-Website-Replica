@@ -121,7 +121,7 @@
                     "How many yards are there in a mile?", 1760, "President Obama was what number President of the United States?", 44, "What is an ogdoad?", 8, "The EU Flag consists of a circle of how many golden stars?", 12
                 ]);
                 console.log(dataList.value)
-                answer.value = Math.floor( Math.random() * 27 / 2 ) * 2; // Halves range to get even .No
+                answer.value = Math.floor(Math.random() * 27 / 2 ) * 2; // Halves range to get even .No
 
                 this.question = dataList.value[(answer.value)]; // Get value of question
                 this.answerOf = dataList.value[(answer.value + 1)]; // Get value of anwser
