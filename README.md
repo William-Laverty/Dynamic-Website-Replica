@@ -1,6 +1,5 @@
 # Dynamic Website Replica
-## _By William Laverty_
-
+![example workflow](https://madewithvuejs.com/images/powered-madewithvuejs--white.png?1)
 ## Features
 
 - Home page with local storage for username
